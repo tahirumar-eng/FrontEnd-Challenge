@@ -11,6 +11,7 @@ const Item = ({ item, onAdd }) => {
                 ? `http://localhost:3000/${item.img}`
                 : "https://i.gadgets360cdn.com/large/canon_eos_r5_image_1594366986226.jpg?downsize=950:*&output-quality=80"
             }
+            alt={item.img}
             className="product-image"
           />
           <h6>{item.name}</h6>

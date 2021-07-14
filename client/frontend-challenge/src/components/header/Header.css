@@ -1,7 +1,11 @@
 .shopping-bag {
   width: 35px;
 }
-
+.rando {
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
+}
 @media screen and (min-width: 992px) {
   .ms-auto {
     align-items: center;

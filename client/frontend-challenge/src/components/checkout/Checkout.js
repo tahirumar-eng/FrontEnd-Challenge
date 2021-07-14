@@ -36,6 +36,7 @@ const Checkout = ({ cart, onDelete }) => {
                         ? `http://localhost:3000/${c.img}`
                         : "https://i.gadgets360cdn.com/large/canon_eos_r5_image_1594366986226.jpg?downsize=950:*&output-quality=80"
                     }
+                    alt={c.img}
                     className="checkout-image"
                   ></img>
                 </th>

@@ -1,4 +1,3 @@
-import { json } from "body-parser";
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Header.css";
@@ -14,9 +13,9 @@ const Header = ({ cart }) => {
     <div>
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
-          <a class="navbar-brand" href="#">
+          <Link to="/" className="rando">
             RandoStore
-          </a>
+          </Link>
           <button
             class="navbar-toggler"
             type="button"
@@ -31,40 +30,26 @@ const Header = ({ cart }) => {
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <Link to="/">
-                  <a class="nav-link " aria-current="page" href="#">
-                    Home
-                  </a>
+                <Link to="/" className="nav-link">
+                  Home
                 </Link>
               </li>
               <li class="nav-item">
-                <Link to="/add-items">
-                  <a class="nav-link" href="#">
-                    Add Items
-                  </a>
+                <Link to="/add-items" className="nav-link">
+                  Add Items
                 </Link>
               </li>
               <li class="nav-item">
-                <Link to="/items">
-                  <a class="nav-link" href="#">
-                    Items
-                  </a>
+                <Link to="/items" className="nav-link">
+                  Items
                 </Link>
               </li>
               <li class="nav-item">
-                <Link to="/checkout">
-                  {" "}
-                  <a
-                    class="nav-link disabled"
-                    href="#"
-                    tabindex="-1"
-                    aria-disabled="true"
-                  >
-                    <div className="relative">
-                      <img src="./shopping.png" className="shopping-bag" />
-                      <span className="count">{totalCount()}</span>
-                    </div>
-                  </a>
+                <Link to="/checkout" className="nav-link">
+                  <div className="relative">
+                    <img src="./shopping.png" className="shopping-bag" />
+                    <span className="count">{totalCount()}</span>
+                  </div>
                 </Link>
               </li>
             </ul>

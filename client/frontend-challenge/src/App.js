@@ -1,13 +1,13 @@
 import "./App.css";
 import Header from "./components/header/Header";
 import { Route, Switch } from "react-router-dom";
-import AddItems from "./components/header/additems/AddItems";
-import Items from "./components/header/items/Items";
+import AddItems from "./components/additems/AddItems";
+import Items from "./components/items/Items";
 import { useEffect, useState } from "react";
 
 import { BrowserRouter } from "react-router-dom";
-import Checkout from "./components/header/checkout/Checkout";
-import Home from "./components/header/home/Home";
+import Checkout from "./components/checkout/Checkout";
+import Home from "./components/home/Home";
 function App() {
   const [cart, setCart] = useState([]);
 
