@@ -1,0 +1,31 @@
+.shopping-bag {
+  width: 35px;
+}
+
+@media screen and (min-width: 992px) {
+  .ms-auto {
+    align-items: center;
+  }
+}
+.ms-auto .nav-item a {
+  color: black;
+  font-weight: 500;
+  text-decoration: none;
+}
+.relative {
+  position: relative;
+}
+.count {
+  position: absolute;
+  top: -14px;
+  left: 9px;
+  padding-left: 5.5px;
+  font-size: 15px;
+  background-color: black;
+  color: white;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  border-radius: 50%;
+  padding-bottom: 23px;
+}
